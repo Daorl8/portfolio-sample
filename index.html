@@ -10,10 +10,10 @@
 <meta property="og:title" content="여백 스튜디오 · YEOBAEK — 브랜딩·그래픽 디자인 스튜디오">
 <meta property="og:description" content="브랜드와 공간을 잇는 브랜딩·그래픽 디자인 스튜디오.">
 <meta property="og:url" content="https://portfolio-sample.lgt3232.workers.dev/">
-<meta property="og:image" content="https://portfolio-sample.lgt3232.workers.dev/photo-1732022427254-daf058e80795.jpg">
+<meta property="og:image" content="https://images.unsplash.com/photo-1732022427254-daf058e80795?auto=format&fit=crop&w=1200&h=630&q=80">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="여백 스튜디오 · YEOBAEK — 디자인 스튜디오">
-<meta name="twitter:image" content="https://portfolio-sample.lgt3232.workers.dev/photo-1732022427254-daf058e80795.jpg">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1732022427254-daf058e80795?auto=format&fit=crop&w=1200&h=630&q=80">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%235C6B70'/><text x='16' y='22' font-family='Arial' font-size='17' font-weight='bold' fill='%23ffffff' text-anchor='middle'>Y</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,8 +71,8 @@ a{color:inherit;text-decoration:none}
 .intro__title em{font-style:normal;color:var(--slate)}
 .intro__lead{font-size:1.06rem;color:var(--grey);max-width:42ch}
 .intro__meta{display:flex;gap:34px;margin-top:42px;flex-wrap:wrap}
-.intro__meta div .k{font-family:"Space Mono",monospace;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate)}
-.intro__meta div .v{font-size:.95rem;margin-top:5px}
+.intro__meta div .k{font-family:"Space Mono",monospace;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);display:block}
+.intro__meta div .v{font-size:.95rem;margin-top:5px;display:block}
 
 @media (max-width:920px){
   :root{--sidebar:0px}
@@ -137,7 +137,7 @@ a{color:inherit;text-decoration:none}
   <header class="mwrap intro" id="intro">
     <span class="eyebrow">Branding & Graphic Design Studio</span>
     <h1 class="intro__title reveal">덜어낼수록<br><em>분명</em>해집니다</h1>
-    <p class="intro__lead reveal">여백은 비움이 아니라 선택입니다. 브랜드가 진짜 하고 싶은 한 마디가 남을 때까지, 우리는 덜어내며 정리합니다.</p>
+    <p class="intro__lead reveal">여백은 비움이 아니라 선택입니다.<br>브랜드가 진짜 하고 싶은 한 마디가 남을 때까지,<br>우리는 덜어내며 정리합니다.</p>
     <div class="intro__meta reveal">
       <div><span class="k">Founded</span><span class="v">2017 · 서울</span></div>
       <div><span class="k">Focus</span><span class="v">브랜딩 · 그래픽 · 공간</span></div>
@@ -205,7 +205,7 @@ a{color:inherit;text-decoration:none}
 <section class="section" id="about">
   <div class="mwrap about">
     <div class="about__media reveal">
-      <img src="photo-1732022427254-daf058e80795.jpg" alt="여백 스튜디오 공간">
+      <img src="https://images.unsplash.com/photo-1732022427254-daf058e80795?auto=format&fit=crop&w=1000&q=80" alt="여백 스튜디오 공간">
     </div>
     <div class="about__text reveal">
       <p class="eyebrow">About — 여백 스튜디오</p>
@@ -291,7 +291,7 @@ a{color:inherit;text-decoration:none}
     <div class="contact__l reveal">
       <p class="eyebrow">Contact</p>
       <h2>프로젝트를<br>시작해볼까요</h2>
-      <p>브랜딩·그래픽·공간 프로젝트 의뢰를 환영합니다. 간단한 소개와 일정을 남겨주시면 영업일 기준 2–3일 안에 회신드립니다.</p>
+      <p>브랜딩·그래픽·공간 프로젝트 의뢰를 환영합니다.<br>간단한 소개와 일정을 남겨주시면 영업일 기준 2–3일 안에 회신드립니다.</p>
       <a class="mailto" href="mailto:studio@yeobaek.kr">studio@yeobaek.kr</a>
     </div>
     <form class="form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -360,27 +360,27 @@ a{color:inherit;text-decoration:none}
 
 <script>
 (function(){
-  var U="";
-  function img(id,w){return "photo-"+id+".jpg";}
+  var U="https://images.unsplash.com/photo-";
+  function img(id,w){return U+id+"?auto=format&fit=crop&w="+(w||1000)+"&q=80";}
   var P=[
     {id:"p1",num:"01",cat:"브랜딩",year:"2026",role:"브랜드 아이덴티티 · BX",client:"OBJET",title:"OBJET 뷰티 리브랜딩",
      hero:"1689381826073-f76e945cffbf",imgs:["1685423835742-466cc971e91a","1686585985727-ddc0537a037e"],
-     overview:"성분을 비우고 본질만 남긴 스킨케어 브랜드 OBJET의 전면 리브랜딩. 로고·패키지·디지털까지 하나의 목소리로 정리했습니다."},
+     overview:"성분을 비우고 본질만 남긴 스킨케어 브랜드 OBJET의 전면 리브랜딩.<br>로고·패키지·디지털까지 하나의 목소리로 정리했습니다."},
     {id:"p2",num:"02",cat:"디지털",year:"2025",role:"웹 · 인터랙션 디자인",client:"무브",title:"무브 캠페인 사이트",
      hero:"1685423835742-466cc971e91a",imgs:["1686417199134-44656c560e02","1601993957728-1e56ab70c5a8"],
-     overview:"운동 습관 앱 '무브'의 시즌 캠페인 마이크로사이트. 스크롤에 반응하는 3D 오브제로 '움직임'을 시각화했습니다."},
+     overview:"운동 습관 앱 '무브'의 시즌 캠페인 마이크로사이트.<br>스크롤에 반응하는 3D 오브제로 '움직임'을 시각화했습니다."},
     {id:"p3",num:"03",cat:"공간·전시",year:"2025",role:"전시 공간 · 그래픽",client:"WAVE Festival",title:"사운드 전시 ‘WAVE’",
      hero:"1483366774565-c783b9f70e2c",imgs:["1565193438479-a0fc46c17f13","1610380123149-fba11fb20792"],
-     overview:"소리를 빛과 곡면으로 번역한 미디어 전시 공간 디자인. 동선·사인·그래픽을 한 호흡으로 설계했습니다."},
+     overview:"소리를 빛과 곡면으로 번역한 미디어 전시 공간 디자인.<br>동선·사인·그래픽을 한 호흡으로 설계했습니다."},
     {id:"p4",num:"04",cat:"그래픽",year:"2024",role:"아이덴티티 · 포스터",client:"리듬 페스티벌",title:"리듬 페스티벌 아이덴티티",
      hero:"1686585985727-ddc0537a037e",imgs:["1688426291168-c15dbcc9024e","1685423835742-466cc971e91a"],
-     overview:"도시 음악 축제의 비주얼 아이덴티티. 단일 그래픽 모티프를 포스터·티켓·굿즈로 변주했습니다."},
+     overview:"도시 음악 축제의 비주얼 아이덴티티.<br>단일 그래픽 모티프를 포스터·티켓·굿즈로 변주했습니다."},
     {id:"p5",num:"05",cat:"공간·전시",year:"2024",role:"공간 BX · 사인",client:"성수 리테일",title:"성수 리테일 플래그십",
      hero:"1565193438479-a0fc46c17f13",imgs:["1496421006432-ebcd7f4ec081","1601993957728-1e56ab70c5a8"],
-     overview:"라이프스타일 브랜드의 첫 오프라인 플래그십. 공간 그래픽과 사인 시스템으로 브랜드 경험을 일관되게 묶었습니다."},
+     overview:"라이프스타일 브랜드의 첫 오프라인 플래그십.<br>공간 그래픽과 사인 시스템으로 브랜드 경험을 일관되게 묶었습니다."},
     {id:"p6",num:"06",cat:"브랜딩",year:"2023",role:"건축 사인 시스템",client:"한남 갤러리",title:"한남 갤러리 사인 시스템",
      hero:"1520529890308-f503006340b4",imgs:["1610380123149-fba11fb20792","1496421006432-ebcd7f4ec081"],
-     overview:"복합 갤러리 건축의 환경 그래픽·사인 시스템. 콘크리트 표면에 최소한의 타이포만 남겼습니다."}
+     overview:"복합 갤러리 건축의 환경 그래픽·사인 시스템.<br>콘크리트 표면에 최소한의 타이포만 남겼습니다."}
   ];
   var byId={}; P.forEach(function(p){byId[p.id]=p;});
 
@@ -405,7 +405,7 @@ a{color:inherit;text-decoration:none}
     document.getElementById("cvYear").textContent=p.year;
     document.getElementById("cvRole").textContent=p.role;
     document.getElementById("cvClient").textContent=p.client;
-    document.getElementById("cvOverview").textContent=p.overview;
+    document.getElementById("cvOverview").innerHTML=p.overview;
     var strip=document.getElementById("cvStrip"); strip.innerHTML="";
     [p.hero].concat(p.imgs).forEach(function(id2){ var im=document.createElement("img"); im.src=img(id2,1100); im.alt=p.title; im.loading="lazy"; strip.appendChild(im); });
     var ni=(P.findIndex(function(x){return x.id===p.id;})+1)%P.length, np=P[ni];
